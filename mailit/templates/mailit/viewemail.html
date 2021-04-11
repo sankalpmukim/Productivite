@@ -1,4 +1,9 @@
-{% extends "mailit/base.html" %} {% block title %}{{Subject}}{% endblock %} {% block emailList__list %} {% autoescape off %}
+{% extends "mailit/base.html" %}
+{% block title %}{{Subject}}{% endblock %}
+{% block emailList__settings %}{% endblock %}
+{% block emailList__sections %}{% endblock %}
+{% block emailList__list %}
+{% autoescape off %}
 <div class="emailList">
     <h2 class="subject">{{ Subject }}</h2>
     <div class="compose">
@@ -7,4 +12,5 @@
         <p class="message_body">{{ Message_body }}</p>
     </div>
 </div>
-{% endautoescape %} {% endblock emailList__list %}
+{% endautoescape %}
+{% endblock emailList__list %}

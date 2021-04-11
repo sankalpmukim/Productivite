@@ -1,4 +1,8 @@
-{% extends "mailit/base.html" %} {% block title %}Inbox{% endblock %} {% block emailList__list %}
+{% extends "mailit/base.html" %}
+{% block title %}Inbox{% endblock %}
+{% block emailList__settings %}{% endblock %}
+{% block emailList__sections %}{% endblock %}
+{% block emailList__list %}
 <div class="emailList">
     <h3>Compose Email</h3>
     <form class="compose" method="POST">
